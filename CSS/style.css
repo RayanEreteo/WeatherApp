@@ -1,0 +1,74 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(./IMG/pexels-pixabay-76969.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+    color: white;
+    font-size: 120%;
+}
+
+.card{
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 420px;
+    transform: scale(1.1);
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background: rgb(39, 39, 46);
+    cursor: pointer;
+    transition: background 0.2s linear;
+}
+
+button:hover{
+    background: white;
+}
+
+.search-bar{
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: 0.5rem;
+    background: rgb(39, 39, 46);
+    font-size: 100%;
+    width: calc(100% - 100px);
+    color: white;
+}
+
+h1.temp{
+    margin: 0;
+    margin-bottom: 1rem
+}
+
+.description{
+    text-transform: capitalize;
+}
+
+.desc-icon-flex{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
