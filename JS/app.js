@@ -1,5 +1,11 @@
+//UPPERCASE COMMENT --- Category
+//lowercase comment --- Line explanation
+
+//DICTIONARY WITH ALL THE API INFORMATION
 let weather = {
-    "apiKey": "GET YOUR API KEY ON OPENWEATHERMAP",
+    //your api key
+    "apiKey": "PASTE YOUR OPENWEATHERMAP API KEY HERE",
+    //function that contain all the weather info of the city you type
     fetchWeather: function(city){
         fetch("https://api.openweathermap.org/data/2.5/weather?q=" 
         + city 
@@ -10,7 +16,7 @@ let weather = {
         .then((response) => response.json())
         .then((data) => this.displayWeather(data));
     },
-
+    //function that change the element text to the fetchWeather data
     displayWeather: function(data) {
         const { name } = data;
         const { icon, description } = data.weather[0];
@@ -23,12 +29,18 @@ let weather = {
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind speed: " + speed + " km/h";
     },
+    //function that take the value of the search bar and use it in the city parameter of fetchWeather
     search: function(){
         this.fetchWeather(document.querySelector('.search-bar').value);
     }
 }
 
+
+//ELEMENT DECLARATION
+
 input = document.querySelector(".search-bar");
+
+//LISTENERS
 
 document.querySelector('.search-button').addEventListener('click', function() {
     weather.search();
