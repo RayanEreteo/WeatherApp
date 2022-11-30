@@ -4,7 +4,7 @@
 //DICTIONARY WITH ALL THE API INFORMATION
 let weather = {
     //your api key
-    "apiKey": "PASTE YOUR OPENWEATHERMAP API KEY HERE",
+    "apiKey": "ce86501f43804acd8bb5f670c9ff1800",
     //function that contain all the weather info of the city you type
     fetchWeather: function(city){
         fetch("https://api.openweathermap.org/data/2.5/weather?q=" 
