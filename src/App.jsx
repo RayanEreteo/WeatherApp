@@ -9,7 +9,7 @@ import {
   InputRightElement,
   Image,
 } from "@chakra-ui/react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function App() {
   const API_KEY = "ce86501f43804acd8bb5f670c9ff1800";
@@ -54,6 +54,14 @@ function App() {
         setFetchSuccessful(true)
       });
   }
+
+  useEffect(() => {
+    document.addEventListener("keydown", (e) => {
+      if (e.key == "Enter") {
+        fetchWeather(INPUT_REF.current.value) 
+      }
+    })
+  }, [])
 
   return (
     <Flex
