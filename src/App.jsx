@@ -37,8 +37,11 @@ function App() {
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
     )
       .then((res) => {
+        setLoading(true)
+
         if (res.status == 404) {
           setError("La ville entrée n'est pas valide.");
+          setLoading(false)
           return;
         }
 
@@ -52,7 +55,8 @@ function App() {
         setDegree(Math.floor(data.main.temp))
         setMainHeight("400px")
         setFetchSuccessful(true)
-      });
+        setLoading(false)
+      })
   }
 
   useEffect(() => {
@@ -109,6 +113,7 @@ function App() {
                 colorScheme="facebook"
                 fontWeight={"light"}
                 onClick={() => fetchWeather(INPUT_REF.current.value)}
+                isLoading={loading}
               >
                 Vérifier
               </Button>
