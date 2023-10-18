@@ -17,6 +17,8 @@ function App() {
 
   const [mainHeight, setMainHeight] = useState("100px");
 
+  //? Info Serveur
+  const [loading, setLoading] = useState(false)
   const [fetchSuccessful, setFetchSuccessful] = useState(false);
   const [error, setError] = useState("");
 
@@ -36,7 +38,7 @@ function App() {
     )
       .then((res) => {
         if (res.status == 404) {
-          setError("La ville entrée n'est pas valide");
+          setError("La ville entrée n'est pas valide.");
           return;
         }
 
@@ -127,10 +129,10 @@ function App() {
           w={"100%"}
         >
           <Text fontSize={"1.1rem"} id="wind-speed">
-            Vitesse de vent : 14 km/h
+            {`Vitesse de vent : ${weatherInfo && weatherInfo.wind.speed} m/s`}
           </Text>
           <Text fontSize={"1.1rem"} id="humidity">
-            Humidité : 10%
+            {`Humidité : ${weatherInfo && weatherInfo.main.humidity}%`}
           </Text>
         </Flex>
       </Flex>
