@@ -1,4 +1,4 @@
-import { Input, Flex, Text, Heading, Button, InputGroup, InputRightElement } from "@chakra-ui/react"
+import { Input, Flex, Text, Heading, Button, InputGroup, InputRightElement, Image } from "@chakra-ui/react"
 import { useRef, useState } from "react"
 
 function App() {
@@ -34,7 +34,10 @@ function App() {
             </InputRightElement>
           </InputGroup>
         </Flex>
-        <Text id="degrée" fontSize={"2rem"}>20°C</Text>
+        <Flex id="degrée-container" flexDirection={"column"} alignItems={"center"} justifyContent={"center"} fontSize={"2rem"} m={"auto"}>
+          <Text id="degrée">20°C</Text>
+          <Image src="https://openweathermap.org/img/wn/10d@2x.png"></Image>
+        </Flex>
       </Flex>
     </Flex>
   )
