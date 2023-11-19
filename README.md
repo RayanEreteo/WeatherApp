@@ -3,6 +3,6 @@
 Code source de mon application météo de démonstration
 
 # Initialisation
-Lancer cette commande pour installer les dépendances
+Lancer cette commande dans un terminal à la source du projet pour installer les dépendances
 
 ` npm install `
