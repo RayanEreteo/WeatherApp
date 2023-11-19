@@ -9,7 +9,7 @@ Bienvenue dans InfoMétéo, une application météo simple de démonstration dé
 Affiche les prévisions météorologiques actuelles pour une localisation spécifiée.
 
 ## Installation
-Pour démarrer avec WeatherApp, suivez ces étapes :
+Pour démarrer avec InfoMétéo, suivez ces étapes :
 
 1. Clonez le dépôt :
     ```bash
