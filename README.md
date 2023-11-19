@@ -23,7 +23,7 @@ Pour démarrer avec WeatherApp, suivez ces étapes :
     ```
 3. Récupérer votre clé API sur [OpenWeatherMap](https://openweathermap.org)
 
-4. Placer votre clé dans le fichier App.js
+4. Placer votre clé dans le fichier App.jsx et remplacer le string à la ligne ``const API_KEY = "Récupérer votre clé API sur openweathermap.com";``
 
 ## Utilisation
 1. Lancez l'application en utilisant la commande :
