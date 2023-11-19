@@ -13,7 +13,7 @@ Pour démarrer avec WeatherApp, suivez ces étapes :
 
 1. Clonez le dépôt :
     ```bash
-    git clone https://github.com/votre-utilisateur/WeatherApp.git
+    git clone https://github.com/RayanEreteo/WeatherApp.git
     cd WeatherApp
     ```
 
