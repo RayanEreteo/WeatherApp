@@ -12,7 +12,7 @@ import {
 import { useEffect, useRef, useState } from "react";
 
 function App() {
-  const API_KEY = "ce86501f43804acd8bb5f670c9ff1800";
+  const API_KEY = "Récupérer votre clé API sur openweathermap.com";
   const INPUT_REF = useRef();
 
   const [mainHeight, setMainHeight] = useState("100px");
