@@ -6,7 +6,7 @@ Code source de mon application météo de démonstration
 Bienvenue dans InfoMétéo, une application météo simple de démonstration développée en utilisant Javascript, React et Chakra UI.
 
 ## Fonctionnalités
-- Affiche les prévisions météorologiques actuelles pour une localisation spécifiée.
+Affiche les prévisions météorologiques actuelles pour une localisation spécifiée.
 
 ## Installation
 Pour démarrer avec WeatherApp, suivez ces étapes :
